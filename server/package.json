@@ -1,0 +1,20 @@
+{
+  "name": "instasquad-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/cli.js migrate",
+    "seed": "node src/cli.js seed",
+    "reset": "node src/cli.js reset",
+    "reconcile": "node src/cli.js reconcile",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\""
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "zod": "3.25.76"
+  }
+}
